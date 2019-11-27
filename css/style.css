@@ -1,0 +1,279 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco' , cursive;
+}
+
+header{
+	background-image: url('../image/5.jpg') /*linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))*/;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+
+.clearfix{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+.main-nav{
+	float: right;
+	margin-top: 60px;
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.main-nav li a{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100px;
+}
+
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec;
+}
+
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1{
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: : background-color 0.2s, border 0.2s, color 0.2;
+}
+
+.btn-full{
+	background-color: transparent;
+	color: #ffffff;
+	margin-right: 15px;
+	border: 1px solid grey;
+}
+
+.btn-full:hover{
+	background-color: grey;
+}
+
+.btn-nav{
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.btn-nav:hover{
+	background-color: grey;
+}
+
+/*-------------Price Plans-----------*/
+
+#price {
+    padding: 40px 0;
+    background: #efefef;
+}
+
+.single-price {
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: #ffF;
+    transition: 0.5s;
+}
+
+.single-price:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.price-head {
+    background-color: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.price-head h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.container h1{
+	text-align: center;
+	color: black;
+}
+.price-head p {
+    font-size: 25px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#price span {
+    font-size: 15px;
+}
+
+.price-content {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.price-content ul li {
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+
+ul li:last-child {
+    border: none;
+}
+
+.fa-check-circle {
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.fa-times-circle {
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.price-buttom {
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.buy-btn {
+    background-color: #2196f3;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 50px;
+    transition: 0.5s;
+}
+
+.buy-btn:hover {
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+
+/*.colorchange{
+	animation: colorchange 1s infinite;
+}
+
+@keyframes colorchange {
+	0%{color: red;}
+	25%{color: #ffff00;}
+	50%{ color: white; }
+	100%{ color: #ffff00; }
+}*/
+
+.mobile-icon{display: none;}
+
+/*//////// Responsive queries ////////*/
+
+@media only screen and (max-width: 1180px;){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+@media only screen and (max-width: 998px;){
+	h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px;){
+	h1{font-size: 180%;}
+
+	.main-nav{display: none;}
+
+	.mobile-icon { display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+
+	.main-nav{float: left;}
+
+	.main-nav li{
+		/*float: left;*/
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px;){
+	.btn-full{
+		margin-bottom: 20px;
+	}
+
+	h1{font-size: 160%;}
+}
